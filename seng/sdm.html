@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//semeresearch//DTD XHTML 1.0 Transitional//EN"
+"http://style.semeresearch.com/semeresearch_transitional.dtd">
+<html>
+<head>
+ <style type="text/css">
+/* <![CDATA[ */ 
+@import "css/tenda.css"; 
+@import "css/inst.css";
+/*  ]]> */
+ </style>
+
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+ <title>Software Development Methodology and Plan</title>
+</head>
+
+<body>
+<div class="app">
+<div class="srtempl">
+ <h2>Our Software Development Methodology</h2>
+
+ <h3>Background</h3>
+ <p>A software development plan lists projects pending and develops a scheme and order by which
+software can be usefully constructed. I will strive to discern an optimal logical order we can
+use to develop software based on our current skill sets, tools, experience, time frame and
+financial objectives. There is naturally an interest in developing a scheme that is financially
+self sustaining without imposing too much sacrifice or strain on developers or management. This
+means that we will either develop smaller systems first so that we will quickly have something
+to sell or we will divide our larger products into individually salable modules. We will in principle strive to develop expert system based software, that is as close
+to the cutting edge of research in this field as is possible without financial loss.</p>
+
+ <p>In this plan I will develop not only a methodology for the development of individual products
+but also seek to outline the order of development of products. It will become apparent as this
+effort proceeds, precisely what skills we all have to develop, when we have to develop them and
+what the content of our Knowledge Transfer Sessions will be.</p>
+
+<h3>Methodology</h3>
+<p>The primary purpose in using a well structured method for developing software is that we
+    must make the process visible. Process visibility is key to any organized intellectual
+    activity. It is possible for each of us to sit at our respective computers typing away all
+    day without consulting or referring to each other, developing software that while
+    functional is not inter-operable or consistent with any standard. We MUST adhere to
+    standards (Open Standards, Internet Standards and CCITT (ITU-T) Standards) otherwise we
+    cannot build on each others work. Further, based on our individual preferences we must
+    develop reusable Objects/ Templates or Classes. At this point the easiest way to move
+    forward, without all of us aspiring to be language lawyers is to use objects and
+    standardize on a particular development language and platform. I will outline the steps and
+    documents to be delivered at each step of the development process. This is a flexible list
+    and will depend on the actual product being developed. I suggest that the list of documents
+    to be delivered be outlined in one of the development documents:</p>
+    
+    <p> 
+    <ol>
+    <li>PRODUCT SPECIFICATION DOCUMENT:
+       
+        A Product Specification Document(PSD) is the first document to be created when a person has an idea for a new product or the enhancement of an already existing product. A PSD has the following elements:
+        <ol>
+       <li> PRODUCT NAME: Use a Codename for the Product, marketing will decide on a final name</li> 
+       <li> PREAMBLE: This contains a management summary of the market that this product is
+        intended to service, who some potential clients are, and a one paragraph
+        description(suitable for non-techie marketers) of its features. </li>
+        <li> FEATURE LIST: This is a preliminary Listing of the functionality that you think
+        should be included in the product.</li>
+        <li> COSTINGS: Include here such things as how long you think it may take to develop
+        this product, what new tools we might need to buy to speed the product development
+        cycle, how many developers it would take to achieve the goals you have outlined in the
+        feature list. You might also want to give some idea of what you think the product will
+        sell for, and approximately how many units you think can be sold. Nobody expects you to
+        get the numbers absolutely right the first time off, so don't be too worried about the
+        exact product delivery schedule, unit sales and so forth. That is reserved for another
+        document. </li>
+       <li>COMPETITIVE ANALYSIS: In this section of your PSD give people some idea of
+        competitive products, what they sell for, how many units have been sold and what you
+        think the draw backs or impediments to its progress were. You might also want to attach
+        some details on features you think we should implement that they haven't.
+
+        <p>Now it is not a given that a product specification document will always lead to the
+        development of a product, it is essentially a speculative and exploratory document. It
+        is your purpose to demonstrate that a particular product has value and that we can
+        develop it in a reasonable amount of time with tools that we may already have, and that
+        the bottom line may justify a more in depth examination of the premises of your PSD.</p>
+
+        <p>The PSD should be directed to the Technical Director (Nyimbi, at this
+        point). The responsive document is and Authority to proceed (ATP)</p>.</li> 
+        </ol></li> 
+        
+        <li> AUTHORITY TO PROCEED:
+        An Authority to Proceed (ATP), is given by a line manager in consultation with all
+        development/Marketing and Finance Staff in response to a particular PSD. It is a Node
+        Document in that it spawns a whole series of other processes in different departments.
+        The ATP is directed to the following parties:
+        <ol>
+           <li> Development:    Initiate the development process</li>
+            <li>Finance:        Project Planning and costing sequence initiated</li>
+            <li>Marketing:      Marketing Sequence Initiated</li>
+        </ol>
+        Even if the product idea dies at the PSD stage, we must establish it as a standard
+        procedure that the originator of the idea receive some indication in writing/email as
+        to why the PSD did not go through. It might for instance be required that the PSD
+        undergo some refinements or adumbration before it can be accepted, in which case the
+        return document must clearly indicate what more needs to be done. In order to forestall
+        this entire thing blowing out of proportion and peoples Egos getting in the way, I will
+        suggest that people writing a PSD put it out as a request for comment (RFC) first. An
+        RFC as you will notice is at the head of the tree. Naturally this entire process must
+        remain internal to us, and everybody must take reasonable care that internal
+        documents remain internal.
+        </li>
+        
+        <li>DEVELOPMENT DOCUMENTS:
+        In order not to create too big a document, I have divided this section into the
+        different document classes. Development documents refer to the documents expected from
+        R and D in support of the product development effort. Since the development of different
+        applications requires different documents, I will indicate only the most generic
+        document set.
+        <ol>
+        <li>->ARCH: This is the Architecture document for the product. It will indicate in depth
+        the required functionality, the application architecture, Modules expected to be built
+        and how code reuse may be optimized. This is generally the the most thought intensive
+        process in the entire programming effort. It will be required that based on a
+        comparison of similar products from other vendors we explain why we are leaving out
+        certain functionality, if any. In this document we also define the User Interface
+        Standards, Message Passing Conventions, Tests for Robustness and error/exception
+        trapping. Define the tools we are going to use (CASE), algorithms we will use and why,
+        language we are going to use and why, tools we need to buy/acquire/build etc. We will
+        identify any common objects across any modules and define an API/Interface for each
+        that provides the greatest opportunity for reuse.</li>
+
+        <li>->MOD: This is the Module definition document. In the module definition document we
+        clearly define the function of each module, it's interfaces and calling conventions and
+        we further show that each functional feature in the architecture document is clearly
+        mapped onto some module. If the module has a user interface component we specify what
+        information we will need from the end-user, if any. This is to facilitate the
+        development of UI by a User Interface Specialist. The Application Logic must be clearly
+        indicated. NO, we don't want flow charts or ancient stuff like that, we do however
+        require a process analysis for the module. (You might want to have a look at
+        ProcessAnalyst \\Akili\Devtool\DBDev\PDesign\PDPa6.exe) If the application is a
+        database application  then this is the point where you give the Conceptual Data Model.</li>
+
+       <li> -> DCSPEC: This is the documentation Specification for the product. Indicate here what
+        documentation will be needed for distribution with the final product. Help files/Man
+        pages, User Guides , Tech Support Guides, Marketing Brochures (Nobody can develop these
+        better than a techie!!), Implementation Guides, etc.</li>
+
+        <li>-> QASSUR: You guessed right, Even before you begin coding you must indicate how to
+        determine that the product meets spec. Indicate here key indicators of performance,
+        concurrency of users, load up time, stay alive periods, configuration time scales, user
+        skill required etc.</li>
+
+        <li>-> CODING: This is when we do the actual programming of the product. Your documentation
+        of the code cannot be over stressed, somebody else must be able to read your code and
+        understand what you are doing. If you have a global variable (you shouldn't!!) indicate
+        what it is used for, in your declaration of each function you must indicate the
+        datatype, transformations and side effects of both its inputs and what its outputs.
+        Further, if you go back and change the function at some later time, DO NOT DELETE your
+        old comments, ADD to them indicating what changes you have made and why. This latter is
+        important so that you don't break some poor guys code. I would further suggest that you
+        name your functions in some meaningful and standard way across all the code that you
+        touch, preface your unit/file with a standard header that indicates what you're doing,
+        and to help people find out where what is being done, create a manifest of the files in
+        a directory indicating which file has which function. I know this is really boring, but
+        I'm sure you know what a nightmare it is reading code that is not properly commented,
+        so lets do it right. Avoid Flaky algorithms of dubious repute,</li>
+
+        <li>-> SUPNOTES: Support Notes are an honest to goodness assessment on your parts of which
+        functions you think can be improved, which algorithms you're not sure about and which
+        modules you think are flaky. If you're not sure of something, the support notes are the
+        place to let people know what's up. Include here any references to books/magazines or
+        journals where you got code snippets so that somebody can find out where to seek help
+        if they're modifying your code.</li>
+
+        <li>-> EVOLUTION REPORT: Finally you have got the application out of the way, in time and
+        on schedule, because you planned it so well. Now if you didn't implement some features
+        or you have lately discovered how you can improve the product, you short circuit the
+        whole PSD process and write an evolution report. Here tell everybody where you are
+        going with the application, Bug reports, feature enhancements etc. Generally Speaking
+        you are giving a report of how the product development went, what problems you
+        encountered in it's development and generally being chatty about what you have done.</li>
+          </ol>  
+        </li>
+        
+        <li>FINANCE DOCUMENTS:
+        Finance has the onerous task of making sure that the resources are available to get the
+        job done. Their task is the prediction of Project Implementation costs, Possible Return
+        on Investment, The determination of Minimum Unit sales to break even, the determination
+        of how to best capitalize on a product financially and most importantly determining
+        what the profit per unit is (if any). Here is a delineation of the documents that must
+        be developed and what is in each (briefly):
+        <ol>
+        <li>PJ-COSTING: Based on the assessment of the development team, and finances knowledge of
+        the reliability of the time estimates, and requirements,the Project Accountant
+        (Leonard) develops a project costing analysis. The project costing analysis gives a
+        measure of how much money it will take to actually develop a particular product, based
+        on personnel emoluments, rent, overheads, consumables, packaging and marketing costs,
+        media costs, manual printing and all that sort of thing. If the project team developing
+        a product has an impact on any other team, the project accountant must also assess the
+        financial implications of lost productivity for members of other teams. Based on all
+        the factors above, Management (Okumu in this instance), decides on how best to move
+        forward with this effort. It is the task of Line Managers to assure that there are
+        sufficient other income streams to meet the cost of all development currently taking
+        place. The calculation works like this: Personnel are a calculable cost, normally a
+        well defined progression, so are overheads and consumables. The actual project costs
+        differ with the development time table. We must, given these constraints, work out
+        what-if scenarios that optimize productivity with least immediate financial impact e.g.
+        What if we extended the duration of the project so that people could put some work in
+        other projects that are immediately bringing in money, can we meet all our costs and
+        still fund the ongoing development  m,.? If we do that, by how much do we extend the
+        development period and what are the ramifications vis a vis the competition? {Sounds
+        pretty complex, but it isn't really, once you have a little experience. (An expert
+        System would be really great for this!!!)} Now based upon projected sales after the
+        completion of development, the PJ-Costing gives a ROI projection for various prices per
+        unit of product. The actual ROI is going to be determined by market forces (how much is
+        the competition selling similar products for ?, How does increasing price reduce sales
+        or is the product price resistant ? etc.).</li>
+
+        <li>PJ-TIMELINE: This is by far the most mathematically interesting document, It outlines
+        the actual expense/ per unit time over the development period for a number of
+        scenarios. Sounds simple but its some pretty cool math, I can tell you. If you're
+        interested it even involves some pretty cool math and game theory. Leonard will have his work
+        cut out here!!!</li>
+
+        <li>PJ-PROJECTIONS: More realistic calculations of ROI and all that sort of thing.
+        Essentially what is being looked at here is the calculation of profit per period based
+        on marketing costs , Marketing effectiveness of different means of knowledge
+        distribution, patenting costs, different licensing options and financial implications
+        thereof, recovery of costs incurred based on interest paid on funds.</li>
+        </ol>    
+        </li>
+        
+        <li>MARKETING DOCUMENTS
+        Marketing is essentially a function that we have outsourced. It is
+        however very important that we liaise closely with our colleagues in order to ensure
+        the best possible implementation and deployment of our products. To this end we have a
+        set of marketing support documents that we must develop. In principle the finance and
+        documentation sections are responsible for this task. The
+        documents are as follows (I'll be as brief as possible):
+        
+        <ol>MIP: This is a Marketing Introduction Plan. A MIP is a complex and large document that states everything we know and feel about a product. I have broken down my understanding
+        of this document into sections and included them below.
+           
+           <li> MANAGEMENT SUMMARY:
+                This section draws into one overall summary the key issues affecting the
+                proposed product introduction, restates the implications to be addressed and
+                the marketing strategies.</li>
+           <li> PRODUCT DESCRIPTION:
+                This section is not intended to provide an exhaustive description of the
+                product.  It must, however, allow a judgment to be made as to the likely
+                achievement of the volume and market share objectives based upon product
+                attributes.</li>
+            <li>TARGET MARKETS:
+                In this section should be documented and quantified those markets selected for
+                the product, together with the rationale.</li>
+            <li> DISTRIBUTION CHANNELS:
+                Consideration must be included on the state of development of the various
+                channels open to us in the proposed markets.</li>
+            <li> COMPETITION AND POSITIONING:
+                This section deals with the marketing environment of the product, identifying
+                its competition and positioning</li>
+            <li> PRICING STRATEGY:
+                This section describes the pricing basis for each product separately to be
+                available for sale.</li>
+            <li> COMMERCIAL PROFILE:
+                This section details the sales forecast of the product shipment over the next
+                four quarters.  The time interval may be different for some products with high
+                costs or long gestation periods.</li>
+            <li> PROMOTIONAL PLAN:
+                The promotional plan will vary according to the stage of, the product life
+                cycle, the distribution strategy and the overall marketing approach.</li>
+            <li> SOFTWARE STRATEGY:
+                This section looks at what is available against what is required by the end
+                users (as well as software developers) in the Kenyan market.</li>
+            <li> SUPPORT STRATEGY:
+                This section anticipates the support requirements for the product over the
+                short and long term.  it should address the fitness for purpose of the existing
+                local, regional or international support infrastructure.</li>
+            <li> SERVICE OPTIONS:
+                This section covers the Customer Services options that are available locally,
+                and describes how such services are to be implemented and applied for the
+                product.</li>
+            <li> LOGISTICS:
+                This section describes the ordering procedure, the delivery process, the
+                contractual terms, and the upgrade requirement.</li>
+            <li> DOCUMENTATION:
+                This section identifies all available documentation for the product.</li>
+            <li> CERTIFICATIONS:
+                Some products or their components may be subject to controls by standards,
+                local authorities, etc.  This section checks out these restrictions.</li>
+            <li> LAUNCH PROGRAM:
+                This section provides details of the program and all the activities
+                contributing or related to the product launch.</li>
+            <li> TRAINING REQUIREMENTS:
+                This section identifies the requirements and plans the training schedules for
+                sales and all support staff.</li>
+            <li> REVIEW PROCEDURE:
+                This section defines the procedure for carrying out the formal product review.</li>
+            <li> RISKS AND ISSUES
+                This section states the assumptions, risks and issues regarding the
+                introduction of the product.</li>
+            
+        </ol>
+        </li>
+       <p> MA: This is an authorization to market, it has principally the same format as an ATP in the product development cycle.</p>
+
+            <p>COMPETE: This is a detailed survey of the competition and what their products. In
+            this document we do a competitive analysis, forestall any attacks on our product,
+            prepare performance bench marks, do a cost/feature analysis etc. The thoroughness
+            of this document is left to the imagination of the person writing it.</p>
+
+            <p>CLIST: A Potential Client List, What else could it be ?</p>
+
+</ol>
+ </div>
+
+ 
+
+<div class="legal1">Company Proprietary</div>
+
+<div class="footnote">
+ Copyright &#169; 2016 Nyimbi Odero.  All rights reserved. <a href="sr-license.html">License terms</a>.
+ Retain this copyright statement whenever this file is used as a
+ template.
+</div>
+
+</div>
+</body>
+</html>
